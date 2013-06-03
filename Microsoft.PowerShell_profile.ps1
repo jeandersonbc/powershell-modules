@@ -11,6 +11,9 @@
 set-alias vi gvim
 set-alias vim gvim
 
+# PATH
+$env:PATH = $env:PATH + ";C:\Program Files\SlikSvn\bin\"
+
 # .DESCRIPTION
 #     Changes the prompt line to ``hh:mm computerName:[../relativePath]>``
 function prompt {
