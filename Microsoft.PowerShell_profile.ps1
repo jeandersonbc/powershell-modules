@@ -32,13 +32,11 @@ function prompt {
 	# Set your custom colors here
     $prompt_color = [ConsoleColor]::DarkCyan
     $path_color = [ConsoleColor]::Cyan
-	$text_color = [ConsoleColor]::Green
 
     Write-Host $(get-date).toString("hh:mm ") -foregroundColor $prompt_color -noNewLine
     Write-Host ($env:ComputerName + ":[") -foregroundColor $prompt_color -noNewLine
     Write-Host $rel_path -foregroundColor $path_color -noNewLine
     Write-Host "]>" -foregroundColor $prompt_color -noNewLine
-	Write-Host -foregroundColor $text_color -noNewLine
 
     return " "
 }
