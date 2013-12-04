@@ -8,8 +8,7 @@
 #>
 
 # ALIASES
-#
-# Put your alias here. For instance "set-alias myAlias Real_Name"
+# Put your alias here. For instance "set-alias alias Real_Name"
 set-alias vi gvim
 set-alias vim gvim
 
@@ -18,6 +17,7 @@ set-alias vim gvim
 # FIXME: Hardcoding... NOT COOL! What about file reading?
 $path_elements = @(
 	"C:\Users\Jeanderson\Dev\apache-ant-1.9.1\bin";
+	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
 	"C:\Program Files\SlikSvn\bin\";
 )
 foreach ($element in $path_elements) {
@@ -26,6 +26,7 @@ foreach ($element in $path_elements) {
 
 # .DESCRIPTION
 #     Changes the prompt line to ``hh:mm computerName:[../relativePath]>``
+#
 function prompt {
     $rel_path = Resolve-Path . -Relative
 
@@ -47,10 +48,22 @@ function prompt {
 #     newfile fileName1 [fileName2 fileName3 ... fileNameN]
 # .EXAMPLE
 #     newfile Makefile script.py header.h implementation.cpp
-function newfile {
+#
+function newfiles {
     foreach($filename in $args) {
         new-item -Path . -itemtype "file" -name $filename
     }
+}
+
+# .DESCRIPTION
+#     Starts a new process as an administrator
+# .SYNTAX
+#     sudo program
+# .EXAMPLE
+#     sudo powershell
+#
+function sudo($program) {
+	start-process $program -verb runas
 }
 
 # TODO
@@ -58,6 +71,7 @@ function newfile {
 #
 # figure out a way to update PATH or open a new PS session in the current
 # directory
+#
 function addPath {
     Write-Host "Not implemented yet..." -foregroundColor ([ConsoleColor]::Red)
 }
