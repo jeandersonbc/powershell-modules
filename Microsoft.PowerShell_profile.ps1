@@ -13,12 +13,12 @@ set-alias vi gvim
 set-alias vim gvim
 
 # PATH
-#
-# FIXME: Hardcoding... NOT COOL! What about file reading?
 $path_elements = @(
 	"C:\Users\Jeanderson\Dev\apache-ant-1.9.1\bin";
 	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
 	"C:\Program Files\SlikSvn\bin\";
+	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
+    "C:\Users\Jeanderson\Dev\winmd5free\";
 )
 foreach ($element in $path_elements) {
 	$env:PATH = $env:PATH + $element + ";"
