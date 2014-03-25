@@ -20,8 +20,17 @@ $path_elements = @(
 	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
     "C:\Users\Jeanderson\Dev\winmd5free\";
 )
+
+# TODO doc
+# if path exists, adds to $env:path
+function addPath($pathElement) {
+    if (test-path $pathElement) {
+        $env:PATH = $env:PATH + $pathElement + ";"
+    }
+}
+
 foreach ($element in $path_elements) {
-	$env:PATH = $env:PATH + $element + ";"
+    addPath($element)
 }
 
 # .DESCRIPTION
@@ -64,14 +73,4 @@ function newfiles {
 #
 function sudo($program) {
 	start-process $program -verb runas
-}
-
-# TODO
-# if path exists, adds to $path_elements list
-#
-# figure out a way to update PATH or open a new PS session in the current
-# directory
-#
-function addPath {
-    Write-Host "Not implemented yet..." -foregroundColor ([ConsoleColor]::Red)
 }
