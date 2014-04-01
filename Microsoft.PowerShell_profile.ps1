@@ -13,6 +13,7 @@ set-alias vi gvim
 set-alias vim gvim
 
 # PATH
+# Add
 $path_elements = @(
 	"C:\Users\Jeanderson\Dev\apache-ant-1.9.1\bin";
 	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
@@ -22,9 +23,9 @@ $path_elements = @(
 )
 
 # .DESCRIPTION
-#     If exists, adds the given path to the system-path environment ($env:Path)
-#     in this session. To make it persistant, hard code the path to the
-#     $path_elements list.
+#     If exists, adds the given path to the system-path environment
+#     ($env:Path) in this session. To make it persistant, hard code
+#     the path to the $path_elements list.
 #
 function addPath($pathElement) {
     if (test-path $pathElement) {
