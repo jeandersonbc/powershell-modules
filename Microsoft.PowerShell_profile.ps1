@@ -21,8 +21,11 @@ $path_elements = @(
     "C:\Users\Jeanderson\Dev\winmd5free\";
 )
 
-# TODO doc
-# if path exists, adds to $env:path
+# .DESCRIPTION
+#     If exists, adds the given path to the system-path environment ($env:Path)
+#     in this session. To make it persistant, hard code the path to the
+#     $path_elements list.
+#
 function addPath($pathElement) {
     if (test-path $pathElement) {
         $env:PATH = $env:PATH + $pathElement + ";"
