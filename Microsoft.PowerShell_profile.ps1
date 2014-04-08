@@ -29,7 +29,7 @@ $path_elements = @(
 #
 function addPath($pathElement) {
     if (test-path $pathElement) {
-        $env:PATH = $env:PATH + $pathElement + ";"
+        $env:PATH = $env:PATH + ";" + $pathElement
     }
 }
 
