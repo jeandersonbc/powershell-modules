@@ -12,19 +12,14 @@
 set-alias vi gvim
 set-alias vim gvim
 
-# Alloy wrapper
-function alloy {
-    java -jar "C:\Users\Jeanderson\Dev\alloy4.2.jar"
-}
-
 # PATH
-# Add
 $path_elements = @(
 	"C:\Users\Jeanderson\Dev\apache-ant-1.9.1\bin";
 	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
 	"C:\Program Files\SlikSvn\bin\";
 	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
     "C:\Users\Jeanderson\Dev\winmd5free\";
+    "C:\Program Files (x86)\Git\bin\ssh";
 )
 
 # .DESCRIPTION
