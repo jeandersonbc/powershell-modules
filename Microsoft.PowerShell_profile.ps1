@@ -19,7 +19,7 @@ $path_elements = @(
 	"C:\Program Files\SlikSvn\bin\";
 	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
     "C:\Users\Jeanderson\Dev\winmd5free\";
-    "C:\Program Files (x86)\Git\bin\ssh";
+    "C:\Program Files (x86)\Git\bin\ssh.exe";
 )
 
 # .DESCRIPTION
