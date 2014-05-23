@@ -79,12 +79,12 @@ function sudo($program) {
 }
 
 function django-admin {
-    $script = 'C:\Program Files\Python\Scritps\django-admin.py'
+    $script = 'C:\Program Files\Python\Scripts\django-admin.py'
     if (test-path $script) {
         python $script $args
 
     } else {
-        write-host "Script not found " -ForegroundColor Red -NoNewLine
+        write-host "Script '$script' not found " -ForegroundColor Red -NoNewLine
         write-host "(is Django installed correctly?)."
     }
 }
