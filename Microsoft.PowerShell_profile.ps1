@@ -77,14 +77,3 @@ function newfiles {
 function sudo($program) {
 	start-process $program -verb runas
 }
-
-function django-admin {
-    $script = 'C:\Program Files\Python\Scripts\django-admin.py'
-    if (test-path $script) {
-        python $script $args
-
-    } else {
-        write-host "Script '$script' not found " -ForegroundColor Red -NoNewLine
-        write-host "(is Django installed correctly?)."
-    }
-}
