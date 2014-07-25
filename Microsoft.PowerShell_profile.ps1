@@ -16,7 +16,6 @@ set-alias vim gvim
 $path_elements = @(
 	"C:\Users\Jeanderson\Dev\apache-ant-1.9.1\bin";
 	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
-	"C:\Program Files\SlikSvn\bin\";
 	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
     "C:\Users\Jeanderson\Dev\winmd5free\";
 )
