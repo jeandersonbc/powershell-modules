@@ -79,3 +79,16 @@ function newfiles {
 function admin($program) {
 	start-process $program -verb runas
 }
+
+# Honestly, life is too short to update every single git project manually...
+function gitupdate($projectDirRegex) {
+    foreach ($dir in dir) {
+        if ($dir.Name.contains($projectDirRegex) -and $dir.Attributes.ToString().Equals("Directory")) {
+            cd $dir;
+            Write-Host "Pulling changes for '$dir'..." -ForegroundColor Green
+            git pull;
+            cd ..;
+        }
+    }
+    Write-Host "Done!" -ForegroundColor Green
+}
