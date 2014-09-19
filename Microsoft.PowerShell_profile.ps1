@@ -11,6 +11,7 @@
 # Put your alias here. For instance "set-alias alias Real_Name"
 set-alias vi gvim
 set-alias vim gvim
+set-alias npp "C:\Program Files (x86)\Notepad++\notepad++.exe"
 
 # PATH
 $path_elements = @(
