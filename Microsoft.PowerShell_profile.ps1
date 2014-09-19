@@ -18,6 +18,9 @@ $path_elements = @(
 	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
 	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
     "C:\Users\Jeanderson\Dev\winmd5free\";
+    "C:\Users\Jeanderson\Dev\winmd5free\";
+    "C:\Program Files (x86)\Git\cmd";
+    "C:\HashiCorp\Vagrant\bin";
 )
 
 # .DESCRIPTION
@@ -69,10 +72,10 @@ function newfiles {
 # .DESCRIPTION
 #     Starts a new process as an administrator
 # .SYNTAX
-#     sudo program
+#     admin program
 # .EXAMPLE
-#     sudo powershell
+#     admin powershell
 #
-function sudo($program) {
+function admin($program) {
 	start-process $program -verb runas
 }
