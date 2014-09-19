@@ -14,10 +14,10 @@ set-alias vim gvim
 
 # PATH
 $path_elements = @(
-	"C:\Users\Jeanderson\Dev\apache-ant-1.9.1\bin";
-	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
-	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
-    "C:\Users\Jeanderson\Dev\winmd5free\";
+	"$HOME\Dev\apache-ant-1.9.1\bin";
+	"$HOME\Dev\GnuWin32\bin";
+	"$HOME\Dev\jflex-1.5.0\bin";
+	"$HOME\Dev\winmd5free\";
 )
 
 # .DESCRIPTION
