@@ -11,14 +11,15 @@
 # Put your alias here. For instance "set-alias alias Real_Name"
 set-alias vi gvim
 set-alias vim gvim
+set-alias npp "C:\Program Files (x86)\Notepad++\notepad++.exe"
 
 # PATH
 $path_elements = @(
-	"C:\Users\Jeanderson\Dev\apache-ant-1.9.1\bin";
-	"C:\Users\Jeanderson\Dev\GnuWin32\bin";
-	"C:\Users\Jeanderson\Dev\jflex-1.5.0\bin";
-    "C:\Users\Jeanderson\Dev\winmd5free\";
-    "C:\Users\Jeanderson\Dev\winmd5free\";
+	"$HOME\Dev\apache-ant-1.9.1\bin";
+	"$HOME\Dev\GnuWin32\bin";
+	"$HOME\Dev\jflex-1.5.0\bin";
+    "$HOME\Dev\winmd5free\";
+    "$HOME\Dev\winmd5free\";
     "C:\Program Files (x86)\Git\cmd";
     "C:\HashiCorp\Vagrant\bin";
 )
