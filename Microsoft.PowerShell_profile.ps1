@@ -19,6 +19,7 @@ $path_elements = @(
 	"$HOME\Dev\GnuWin32\bin";
 	"$HOME\Dev\jflex-1.5.0\bin";
 	"$HOME\Dev\winmd5free\";
+    "$HOME\Dev\apache-maven-3.2.3\bin";
 )
 
 # .DESCRIPTION
