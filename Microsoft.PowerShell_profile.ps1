@@ -20,6 +20,7 @@ $path_elements = @(
 	"$HOME\Dev\jflex-1.5.0\bin";
 	"$HOME\Dev\winmd5free\";
     "$HOME\Dev\apache-maven-3.2.3\bin";
+    "$HOME\Dev\apache-maven-3.2.3\bin";
     "C:\Program Files (x86)\Git\cmd";
     "C:\HashiCorp\Vagrant\bin";
 )
