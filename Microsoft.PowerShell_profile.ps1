@@ -22,6 +22,7 @@ $path_elements = @(
     "$HOME\Dev\apache-maven-3.2.3\bin";
     "$HOME\Dev\apache-maven-3.2.3\bin";
     "C:\Program Files (x86)\Git\cmd";
+    "C:\Program Files (x86)\SMLNJ\bin";
     "C:\HashiCorp\Vagrant\bin";
 )
 
