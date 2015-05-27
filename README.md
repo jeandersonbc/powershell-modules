@@ -1,9 +1,15 @@
 # powershell-modules
 
-Powershell utility modules. Include modules by just importing then in your profile module:
+Powershell utility modules.
+
+## Importing modules
+
+* If you do not have a profile module, create one at `$PROFILE`
+
+After cloning this project, include modules by just importing then in your profile module. Consider the following example:
 
 ```{powershell}
-Import-Module "path/to/module/file.ps1"
+Import-Module "path/to/powershell-modules/src/CustomPromptProfile.ps1"
 ```
 
 ## Troubeshooting
